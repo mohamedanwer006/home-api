@@ -12,5 +12,7 @@ module.exports = function(app) {
     app.use('/api/v1/users', require('./api/user'));
     app.use('/api/v1/devices', require('./api/device'));
     app.use('/api/v1/collections', require('./api/collection'));
+    app.use('/api/v1/sensors', require('./api/sensor'));
+    app.use('/api/v1/modes', require('./api/mode'));
     app.use('/auth', require('./auth'));
 };
