@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Collection = new Schema({
+var Mode = new Schema({
     name: {
         type: String
     },
@@ -25,7 +25,7 @@ var Collection = new Schema({
       ]
 });
 
-Collection.pre('save', function (next) {
+Mode.pre('save', function (next) {
     var now = new Date();
     this.updatedAt = now;
     if (!this.createdAt) {
@@ -34,4 +34,4 @@ Collection.pre('save', function (next) {
     next();
 });
 
-module.exports = mongoose.model('Collection', Collection);
+module.exports = mongoose.model('Mode', Mode);
