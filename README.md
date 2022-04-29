@@ -8,4 +8,4 @@ Smart home api using nodejs
 - update devices status using mqtt
 
 ### Frontend app using flutter 
-mobile app repo : [App repo]("https://github.com/mohamedanwer006/home-app#readme")  
+mobile app repo : [App repo](https://github.com/mohamedanwer006/home-app#readme)  
